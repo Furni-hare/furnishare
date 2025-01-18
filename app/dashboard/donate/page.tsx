@@ -1,26 +1,12 @@
 import Link from "next/link";
 import React from "react";
+import Navbar from "@/app/ui/navbar";
 
 export default function Donate() {
   return (
     <div className="min-h-screen flex flex-col items-center bg-gradient-to-r from-blue-900 via-purple-800 to-black">
       {/* Top Navigation Bar */}
-      <header className="w-full bg-gray-900 bg-opacity-90 py-4 shadow-md">
-        <nav className="container mx-auto flex justify-between items-center px-6">
-          {/* Navigation Links */}
-          <div className="flex space-x-8">
-            <Link href="/" className="text-xl text-white hover:text-blue-400">
-              Furnishare
-            </Link>
-            <Link href="/donate" className="text-xl text-blue-500 font-bold">
-              Donate
-            </Link>
-            <Link href="/collect" className="text-xl text-white hover:text-blue-400">
-              Collect
-            </Link>
-          </div>
-        </nav>
-      </header>
+      <Navbar />
 
       {/* Main Content */}
       <main className="container mx-auto flex flex-col items-center px-6 py-10">
