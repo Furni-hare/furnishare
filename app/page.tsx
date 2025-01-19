@@ -51,7 +51,7 @@ export default function Home() {
         <p className="text-3xl text-gray-300 mb-10 mt-10 text-center leading-relaxed">
           Transforming communities, one furniture piece at a time.
         </p>
-        <Link href="/login/signin">
+        <Link href="/login/signup">
           <button className="mt-5 w-64 px-12 py-6 text-4xl font-semibold text-white bg-blue-500 rounded-2xl shadow-2xl hover:bg-blue-600 transition duration-300 ease-in-out">
           Get Started
           </button>
