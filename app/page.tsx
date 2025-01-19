@@ -29,7 +29,7 @@ export default function Home() {
 
           {/* Right Side: Navigation Links */}
           <div className="flex space-x-8">
-            <Link href="/signup">
+            <Link href="/login/signup">
               <button className="px-6 py-2 text-lg font-semibold text-white bg-blue-500 rounded-lg shadow-lg hover:bg-blue-600 transition duration-300 ease-in-out">
                 Sign Up
               </button>
