@@ -11,30 +11,31 @@ export default function Navbar() {
       <nav className="container mx-auto px-4 py-5 bg-opacity-80 bg-gray-900 rounded-xl shadow-2xl flex justify-between items-center backdrop-blur-md mb-12">
         {/* Left Section: Company Name */}
         <div className="flex items-center space-x-16"> {/* Increased spacing to space-x-16 */}
-          <Link href="/" className="text-3xl font-extrabold text-white hover:text-blue-400 transition duration-300">
+          <p className="text-3xl font-extrabold text-white hover:text-blue-400 transition duration-300">
             FurniShare
-          </Link>
+          </p>
         </div>
 
         {/* Navigation Links */}
         <div className="flex w-full justify-between">
+          
           {/* Left Aligned: Home (centered within left third) */}
           <div className="flex-1 flex justify-center">
-            <Link href="/" className="text-2xl font-bold text-white hover:text-blue-400 transition duration-300">
+            <Link href="/dashboard" className="text-2xl font-bold text-white hover:text-blue-400 transition duration-300">
               Home
             </Link>
           </div>
 
           {/* Center Aligned: Donate */}
           <div className="flex-1 flex justify-center">
-            <Link href="/donate" className="text-2xl font-bold text-white hover:text-blue-400 transition duration-300">
+            <Link href="/dashboard/donate" className="text-2xl font-bold text-white hover:text-blue-400 transition duration-300">
               Donate
             </Link>
           </div>
 
           {/* Right Aligned: Collect (centered within right third) */}
           <div className="flex-1 flex justify-center">
-            <Link href="/collect" className="text-2xl font-bold text-white hover:text-blue-400 transition duration-300">
+            <Link href="/dashboard/collect" className="text-2xl font-bold text-white hover:text-blue-400 transition duration-300">
               Collect
             </Link>
           </div>
@@ -53,15 +54,16 @@ export default function Navbar() {
           {/* Dropdown Menu */}
           {dropdownOpen && (
             <div className="absolute right-0 mt-2 w-48 bg-gray-800 text-white rounded-lg shadow-lg">
-              <Link href="/" className="block px-4 py-2 hover:bg-gray-700 rounded-t-lg">
+              <Link href="/dashboard/Profile" className="block px-4 py-2 hover:bg-gray-700 rounded-t-lg">
                 Profile
               </Link>
+              <Link href="/">
               <button
                 className="block w-full text-left px-4 py-2 hover:bg-gray-700 rounded-b-lg"
-                onClick={() => alert("Logged out!")} // Replace with your logout logic
               >
                 Logout
               </button>
+            </Link>
             </div>
           )}
         </div>
