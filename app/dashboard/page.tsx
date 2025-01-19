@@ -60,19 +60,6 @@ export default function Home() {
           )}
         </section>
   
-        {/* Settings */}
-        <section>
-          <h2 className="text-3xl font-semibold mb-6">Settings</h2>
-          <div className="p-6 bg-gray-800 rounded-lg shadow-xl">
-            <p className="mb-4">
-              <span className="font-bold text-teal-400">Mile Radius for Postings:</span>{" "}
-              {mockRadius} miles
-            </p>
-            <p className="text-gray-400">
-              Listings beyond this radius will not appear in your feed.
-            </p>
-          </div>
-        </section>
       </div>
     );
   }
