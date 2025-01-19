@@ -1,5 +1,6 @@
 import React from "react";
 
+
 // Mock database or API response
 const allListings = [
     { id: 1, title: "Wooden Chair" },
@@ -16,6 +17,7 @@ const allListings = [
     // Placeholder: Only filters by title in this example
     return allListings.filter((listing) =>
       listing.title.toLowerCase().includes(query.toLowerCase())
+
     );
   }
   
