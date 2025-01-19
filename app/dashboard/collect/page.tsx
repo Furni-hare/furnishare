@@ -1,5 +1,5 @@
 import React from "react";
-
+import Navbar from "@/app/ui/navbar";
 
 // Mock database or API response
 const allListings = [
@@ -29,6 +29,10 @@ const allListings = [
   
     return (
       <div className="min-h-screen bg-gradient-to-r from-gray-900 via-blue-800 to-black p-8 text-white">
+        
+        {/* Top Navigation Bar */}
+        <Navbar />
+        
         {/* Page Title */}
         <h1 className="text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-blue-500 mb-8 leading-none">
           Collect Items

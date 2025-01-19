@@ -1,4 +1,4 @@
-{/*import TopBar from "@/components/TopBar";*/}
+import Navbar from "@/app/ui/navbar";
 export default function Home() {
     const mockListings = [
       { id: 1, name: "Wooden Chair" },
@@ -14,10 +14,14 @@ export default function Home() {
   
     return (
       <div className="min-h-screen bg-gradient-to-r from-blue-900 via-purple-800 to-black p-8 text-white">
+        
+        {/* Top Navigation Bar */}
+        <Navbar />
+        
         <h1 className="text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-blue-500 mb-12">
           Welcome to FurniShare
         </h1>
-  
+
         {/* Current Listings */}
         <section className="mb-12">
           <h2 className="text-3xl font-semibold mb-6">Your Current Listings</h2>
