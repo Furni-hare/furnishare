@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { handleSignUp } from "./actions";
 
 export default function SignUp() {
   return (
@@ -7,7 +8,7 @@ export default function SignUp() {
       <main className="w-full max-w-2xl bg-gray-800 p-16 rounded-lg shadow-lg mt-32 mb-32">
         <h1 className="text-5xl font-bold text-center mb-10">Sign Up</h1>
 
-        <form action="#" method="post" className="space-y-10">
+        <form action={handleSignUp} method="post" className="space-y-10">
           {/* Full Name */}
           <div>
             <label htmlFor="full-name" className="block text-xl font-medium text-gray-300 mb-4">
@@ -111,7 +112,7 @@ export default function SignUp() {
 
         <p className="text-center text-xl text-gray-300 mt-10">
           Already have an account?{' '}
-          <Link href="/login/signIn" className="text-blue-400 hover:underline">
+          <Link href="/signin" className="text-blue-400 hover:underline">
             Sign in
           </Link>
         </p>
