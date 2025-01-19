@@ -29,12 +29,12 @@ export default function Home() {
 
           {/* Right Side: Navigation Links */}
           <div className="flex space-x-8">
-            <Link href="/signup">
+            <Link href="/login/signUp">
               <button className="px-6 py-2 text-lg font-semibold text-white bg-blue-500 rounded-lg shadow-lg hover:bg-blue-600 transition duration-300 ease-in-out">
                 Sign Up
               </button>
             </Link>
-            <Link href="/signin">
+            <Link href="/login/signIn">
               <button className="px-6 py-2 text-lg font-semibold text-blue-500 border-2 border-blue-500 rounded-lg hover:bg-blue-500 hover:text-white transition duration-300 ease-in-out">
                 Sign In
               </button>
@@ -51,9 +51,11 @@ export default function Home() {
         <p className="text-3xl text-gray-300 mb-10 mt-10 text-center leading-relaxed">
           Transforming communities, one furniture piece at a time.
         </p>
-        <button className="mt-5 w-64 px-12 py-6 text-4xl font-semibold text-white bg-blue-500 rounded-2xl shadow-2xl hover:bg-blue-600 transition duration-300 ease-in-out">
+        <Link href="/login/signUp">
+          <button className="mt-5 w-64 px-12 py-6 text-4xl font-semibold text-white bg-blue-500 rounded-2xl shadow-2xl hover:bg-blue-600 transition duration-300 ease-in-out">
           Get Started
-        </button>
+          </button>
+        </Link>
       </main>
 
       {/* Impact Bar */}
